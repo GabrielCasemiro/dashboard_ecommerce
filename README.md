@@ -9,5 +9,12 @@ Seu tema é escuro, pois tenho grande preferência por dashboards escuros.
 
 O template foi desenvolvido de uma responsiva, para que funcione em todos os tipos de dispositivos.
 
-
+Desktop
 ![Image description](https://i.ibb.co/K6tGRdn/print-dash.png)
+
+
+Ipad
+![Image description](https://i.ibb.co/26f5Vjh/print-dash-ipad.png)
+
+Iphone X
+![Image description](https://i.ibb.co/X7y6kvf/iphone-x.png)

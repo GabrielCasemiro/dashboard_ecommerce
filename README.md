@@ -9,6 +9,8 @@ Seu tema é escuro, pois tenho grande preferência por dashboards escuros.
 
 O template foi desenvolvido de uma responsiva, para que funcione em todos os tipos de dispositivos.
 
+Link para o dashboard: https://dashboardkabum.pythonanywhere.com/.
+
 Desktop
 ![Image description](https://i.ibb.co/K6tGRdn/print-dash.png)
 

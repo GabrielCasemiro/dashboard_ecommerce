@@ -14,7 +14,7 @@ function createSaleChart(graph_data_sales, graph_data_ecommerce, labels) {
                 labels: labels,
                 datasets: [
                     {
-                        label: "Sales in in the year (Million Dolars)",
+                        label: "Sales in the year (Million Dolars)",
                         borderColor: gradient2,
                         borderWidth: "1",
                         backgroundColor: gradient2,

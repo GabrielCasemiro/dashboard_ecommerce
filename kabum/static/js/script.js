@@ -55,8 +55,8 @@ function updateTable(labels, dados, year) {
         }else{
             dado_sales = "$ " + dados[year]["Sales"][i] + " M";
         }
-        $("#tbody").append('<tr> <td>'+labels[i]+'</td> <td>'+ dado_sales +'</td> <td>'+dado_ecommerce+'</td> </tr>')
-        console.log( + ": " )
+        $("#tbody").append('<tr> <td>'+labels[i]+'</td> <td>'+ dado_sales +'</td> <td>'+dado_ecommerce+'</td> </tr>');
+
     }
 }
 

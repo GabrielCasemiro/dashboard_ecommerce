@@ -6,8 +6,9 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <link rel = "icon" href = "https://image.flaticon.com/icons/png/512/1817/1817523.png" type = "image/x-icon"> 
+  <meta name="description" content="Dashboard E-commerce made for a test">
+  <meta name="author" content="Gabriel Henrique Casemiro">
 
   <title>Dashboard E-commerce</title>
   <!-- Importações do Bootstrap 4 -->
@@ -34,15 +35,16 @@
     <div class="border-right border-dark side-menu" id="sidebar-wrapper">
       <div class="sidebar-heading">
         <center>
-        <h3><span class="logo-text">E</span>-commerce</h3></center>
+          <h3><span class="logo-text">E</span>-commerce</h3>
+        </center>
       </div>
       <div class="list-group list-group-flush">
         <a href="/" class="list-group-item list-group-item-action bg-dark text-white"> Dashboard <span
             class="float-right rounded icone-menu"><i class="fa fa-home"></i></span> </a>
-        <a href="/admin" class="list-group-item list-group-item-action bg-dark text-white d-sm-none"> Administration <span
-          class="float-right rounded icone-menu"><i class="fa fa-user"></i></span> </a>
+        <a href="/admin" class="list-group-item list-group-item-action bg-dark text-white d-sm-none"> Administration
+          <span class="float-right rounded icone-menu"><i class="fa fa-user"></i></span> </a>
         <a href="/" class="list-group-item list-group-item-action bg-dark text-white d-sm-none"> Logout <span
-          class="float-right rounded icone-menu"><i class="fa fa-sign-out"></i></span> </a>
+            class="float-right rounded icone-menu"><i class="fa fa-sign-out"></i></span> </a>
       </div>
     </div>
 
@@ -59,12 +61,12 @@
         <ul class="navbar-nav ml-auto mt-2 mt-lg-0 ">
 
           <li class="nav-item dropdown d-none d-sm-block">
-            
+
             <a class="nav-link dropdown-toggle rounded icone-login mr-2 p-2" href="#" id="navbarDropdown" role="button"
               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <img src="https://cdn1.iconfinder.com/data/icons/avatar-97/32/avatar-02-512.png" width="30px">
             </a>
-            
+
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="/admin">Administration</a>
               <a class="dropdown-item" href="/">Logout</a>
@@ -77,7 +79,7 @@
 
       <div class="container-fluid ">
         <div class="row mt-4">
-          
+
           <div class="col-12 col-sm-6 col-lg-3  mb-4 mb-md-4">
             <div class="card bg-card-blue text-white">
               <div class="row">
@@ -140,10 +142,12 @@
           <div class="col-12">
 
             <div class="card bg-dark p-2 shadow">
-              <div class="col-12 text-white mt-2 mb-2"><h5> Total and E-commerce sales by Merchandise Line: 1999-2015.</h5></div>
+              <div class="col-12 text-white mt-2 mb-2">
+                <h5> Total and E-commerce sales by Merchandise Line: 1999-2015.</h5>
+              </div>
               <br>
               <div class="row">
-                <div class="col-lg-7 text-center icone-card p-0 pl-2" id="div-chart"  >
+                <div class="col-lg-7 text-center icone-card p-0 pl-2" id="div-chart">
                   <div id="traffic-chart" class="traffic-chart"></div>
 
                 </div>
@@ -158,19 +162,22 @@
 
                   <div class="progress-box progress-2">
                     <h4 class="por-title">Sales growth based on the last year </h4>
-                    <div class="por-txt text-white">$ <span id="sales_number">0</span> M   (<span id="sales_growth">0</span>%)</div>
+                    <div class="por-txt text-white">$ <span id="sales_number">0</span> M (<span
+                        id="sales_growth">0</span>%)</div>
                     <div class="progress mb-2" style="height: 5px;">
-                      <div class="progress-bar bg-card-yellow progress-bar-striped progress-bar-animated" id="progress-sales" role="progressbar" style="width: 60%;" aria-valuenow="60"
-                        aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar bg-card-yellow progress-bar-striped progress-bar-animated"
+                        id="progress-sales" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0"
+                        aria-valuemax="100"></div>
                     </div>
                   </div>
 
                   <div class="progress-box progress-2">
                     <h4 class="por-title">E-commerce sales growth based on the last year</h4>
-                    <div class="por-txt text-white">$ <span id="sales_ecommerce_number">0</span> M   (<span id="sales_ecommerce_growth">0</span>%)</div>
+                    <div class="por-txt text-white">$ <span id="sales_ecommerce_number">0</span> M (<span
+                        id="sales_ecommerce_growth">0</span>%)</div>
                     <div class="progress mb-2" style="height: 5px;">
-                      <div class="progress-bar bg-card-blue" id="progress-sales-ecommerce" role="progressbar" style="width: 90%;" aria-valuenow="90"
-                        aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar bg-card-blue" id="progress-sales-ecommerce" role="progressbar"
+                        style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                   </div>
 
@@ -183,22 +190,22 @@
         </div>
         <div class="row mt-2">
           <div class="col-12">
-          
-              <table class="table table-borderless table-striped table-dark shadow" style="font-size:14px;">
-                <thead class="bg-dark">
-                  <tr>
-                    <th>Merchandise Line</th>
-                    <th>Total</th>
-                    <th>E-commerce</th>
-                  </tr>
-                </thead>
-                <tbody id="tbody">
-                  
 
-                </tbody>
-              </table>
-            </div>
+            <table class="table table-borderless table-striped table-dark shadow" style="font-size:14px;">
+              <thead class="bg-dark">
+                <tr>
+                  <th>Merchandise Line</th>
+                  <th>Total</th>
+                  <th>E-commerce</th>
+                </tr>
+              </thead>
+              <tbody id="tbody">
+
+
+              </tbody>
+            </table>
           </div>
+        </div>
       </div>
 
     </div>
@@ -230,46 +237,46 @@
     var graph_data_ecommerce = [];
     var labels = [];
     labels_table = ["Books and magazines",
-            "Clothing and accessories",
-            "Computer Hardware",
-            "Computer Software",
-            "Drugs and health aids",
-            "Electronics and appliances",
-            "Food, beer, and wine",
-            "Furniture and home furnishing",
-            "Music and Videos",
-            "Office equipment and supplies",
-            "Sporting Goods",
-            "Toys, hobby goods, and games",
-            "Other merchandise",
-            "Nonmerchandise receipts"]
+      "Clothing and accessories",
+      "Computer Hardware",
+      "Computer Software",
+      "Drugs and health aids",
+      "Electronics and appliances",
+      "Food, beer, and wine",
+      "Furniture and home furnishing",
+      "Music and Videos",
+      "Office equipment and supplies",
+      "Sporting Goods",
+      "Toys, hobby goods, and games",
+      "Other merchandise",
+      "Nonmerchandise receipts"]
 
     // Popular o select
     for (i = 2015; i >= 1999; i--) {
       $('#ano_analise').append(`<option value="${i}">${i}</option>`);
     }
 
-    
+
     //Função reponsável por mudar os dados quando selecionado um novo ano
     function change_data(year) {
       // Zera variaveis
-      $("#div-chart").hide('slow',function(){
-        
-       
+      $("#div-chart").hide('slow', function () {
+
+
       });
       $("#div-chart").html('<canvas id="SalesChart"></canvas>');
       $("#div-chart").show('slow');
-      
-      
+
+
       graph_data_sales = [];
       graph_data_ecommerce = [];
       labels = [];
 
       year = parseInt(year);
-      
+
       graph_data_sales, graph_data_ecommerce, labels = populateGraph(year, graph_data_sales, graph_data_ecommerce, labels);
 
-      
+
       //Atualiza os cards
       $("#total_sales").html("$ " + dados[year]["Total_sales"]);
       $("#total_sales_ecommerce").html("$ " + dados[year]["Total_Ecommerce"]);
@@ -278,28 +285,28 @@
 
       //Atualiza as barras de progresso do lado direito do gráfico
       if (year > 1999) {
-        
-        $("#ecommerce_growth").html(get_percent_of_value(dados[year]["Total_Ecommerce"] - dados[year-1]["Total_Ecommerce"], dados[year]["Total_Ecommerce"]) + " %");
+
+        $("#ecommerce_growth").html(get_percent_of_value(dados[year]["Total_Ecommerce"] - dados[year - 1]["Total_Ecommerce"], dados[year]["Total_Ecommerce"]) + " %");
         $("#sales_number").html(dados[year]["Total_sales"]);
-        percent_growth_sales = get_percent_of_value(dados[year]["Total_sales"] - dados[year-1]["Total_sales"], dados[year]["Total_sales"]);
+        percent_growth_sales = get_percent_of_value(dados[year]["Total_sales"] - dados[year - 1]["Total_sales"], dados[year]["Total_sales"]);
         $("#sales_growth").html(percent_growth_sales);
-        $("#progress-sales").attr('style','width: ' + percent_growth_sales + '%;');
+        $("#progress-sales").attr('style', 'width: ' + percent_growth_sales + '%;');
 
         $("#sales_ecommerce_number").html(dados[year]["Total_Ecommerce"]);
-        percent_growth_sales_ecommerce = get_percent_of_value(dados[year]["Total_Ecommerce"] - dados[year-1]["Total_Ecommerce"], dados[year]["Total_Ecommerce"]);
+        percent_growth_sales_ecommerce = get_percent_of_value(dados[year]["Total_Ecommerce"] - dados[year - 1]["Total_Ecommerce"], dados[year]["Total_Ecommerce"]);
         $("#sales_ecommerce_growth").html(percent_growth_sales_ecommerce);
-        $("#progress-sales-ecommerce").attr('style','width: ' + percent_growth_sales_ecommerce + '%;');
+        $("#progress-sales-ecommerce").attr('style', 'width: ' + percent_growth_sales_ecommerce + '%;');
 
       } else {
 
         // No caso de ser 1999
         $("#sales_number").html(0);
         $("#sales_growth").html(0);
-        $("#progress-sales").attr('style','width: 0%;');
+        $("#progress-sales").attr('style', 'width: 0%;');
         $("#ecommerce_growth").html("-");
         $("#sales_ecommerce_number").html(0);
         $("#sales_ecommerce_growth").html(0);
-        $("#progress-sales-ecommerce").attr('style','width:0%;')
+        $("#progress-sales-ecommerce").attr('style', 'width:0%;')
 
       }
 
@@ -307,8 +314,8 @@
       //Atualiza o Gráfico
       createSaleChart(graph_data_sales, graph_data_ecommerce, labels, year);
 
- 
-            
+
+
       //Atualiza os dados da tabela
       updateTable(labels_table, dados, year);
     }

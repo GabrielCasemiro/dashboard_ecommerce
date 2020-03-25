@@ -10,4 +10,4 @@ Seu tema é escuro, pois tenho grande preferência por dashboards escuros.
 O template foi desenvolvido de uma responsiva, para que funcione em todos os tipos de dispositivos.
 
 
-![Image description](https://ibb.co/Px2Y3Kk)
+![Image description](https://i.ibb.co/K6tGRdn/print-dash.png)

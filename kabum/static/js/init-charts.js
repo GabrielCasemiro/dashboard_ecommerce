@@ -1,4 +1,4 @@
-function createSaleChart(graph_data_sales, graph_data_ecommerce, labels, year) {
+function createSaleChart(graph_data_sales, graph_data_ecommerce, labels) {
     if ($('#SalesChart').length) {
         var ctx = document.getElementById("SalesChart").getContext('2d'),
             gradient = ctx.createLinearGradient(0, 0, 0, 400),
@@ -14,7 +14,7 @@ function createSaleChart(graph_data_sales, graph_data_ecommerce, labels, year) {
                 labels: labels,
                 datasets: [
                     {
-                        label: "Sales in "+ year +" (Million Dolars)",
+                        label: "Sales in in the year (Million Dolars)",
                         borderColor: gradient2,
                         borderWidth: "1",
                         backgroundColor: gradient2,
@@ -22,7 +22,7 @@ function createSaleChart(graph_data_sales, graph_data_ecommerce, labels, year) {
                         data: graph_data_sales
                     },
                     {
-                        label: "E-commerce sales in "+ year +" (Million Dolars)",
+                        label: "E-commerce sales in the year (Million Dolars)",
                         borderColor: gradient,
                         borderWidth: "1",
                         backgroundColor: gradient,

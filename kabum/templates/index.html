@@ -1,0 +1,262 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Dashboard E-commerce</title>
+  <!-- Importações do Bootstrap 4 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+
+  <!-- Estilo padrão -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+  
+  <!-- Estilo para o menu lateral -->
+  <link href="{% static 'css/simple-sidebar.css' %}" rel="stylesheet">
+
+  <!-- Estilo para icones Font Awesome -->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Fonte padrão -->
+  <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="border-right border-dark side-menu" id="sidebar-wrapper">
+      <div class="sidebar-heading"><h2>E-commerce</h2> </div>
+      <div class="list-group list-group-flush">
+        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">  Dashboard <span class="float-right rounded icone-menu"><i class="fa fa-home"></i></span> </a>
+
+      </div>
+    </div>
+
+
+    <!-- Conteúdo da página -->
+    <div id="page-content-wrapper" class="bg-body">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark border-bottom border-dark">
+        <h3><span class="fa fa-bars pointer " id="menu-toggle"></span></h3>
+
+
+
+
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0 ">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle rounded icone-login mr-2 p-2" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="https://cdn1.iconfinder.com/data/icons/avatar-97/32/avatar-02-512.png" width="30px">
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Painel Admin</a>
+              <a class="dropdown-item" href="#">Sair</a>
+            </div>
+          </li>
+        </ul>
+
+      </nav>
+
+      <div class="container-fluid ">
+        <div class="row mt-4">
+
+          <div class="col-12 col-md-3  mb-4 mb-md-4">
+            <div class="card bg-card-blue text-white">
+              <div class="row">
+                <div class="col-4 text-center icone-card">
+                 <i class="fa fa-home"></i>
+               </div>
+               <div class="col-8 text-center text-card mt-3">
+                $ 150 MM
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-3 mb-4 mb-md-4">
+          <div class="card bg-card-pink text-white">
+            <div class="row">
+              <div class="col-4 text-center icone-card">
+               <i class="fa fa-home"></i>
+             </div>
+             <div class="col-8 text-center text-card mt-3">
+              $ 150 MM
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-3 mb-4 mb-md-4">
+        <div class="card bg-card-yellow text-white">
+          <div class="row">
+            <div class="col-4 text-center icone-card">
+             <i class="fa fa-home"></i>
+           </div>
+           <div class="col-8 text-center text-card mt-3">
+            $ 150 MM
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-3 mb-4 mb-md-4">
+      <div class="card bg-card-purple text-white">
+        <div class="row">
+          <div class="col-4 text-center icone-card">
+           <i class="fa fa-home"></i>
+         </div>
+         <div class="col-8 text-center text-card mt-3">
+          $ 150 MM
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- GRAFICO -->
+<div class="row mt-3">
+  <div class="col-12">
+
+    <div class="card bg-dark p-2 shadow">
+      <div class="row">
+        <div class="col-lg-8 text-center icone-card">
+         <canvas id="singelBarChart"></canvas>
+       </div>
+       <div class="col-lg-4 text-card mt-3">
+
+         <div class="input-group mb-3 shadow " style="font-size:17px;">
+          <select class="custom-select bg-body text-white" id="ano_analise">
+            <option selected>Ano para analisar</option>
+            <option value="2015">2015</option>
+            <option value="2014">2014</option>
+
+          </select>
+        </div>
+
+
+        <div class="progress-box progress-1">
+          <h4 class="por-title">Visits</h4>
+          <div class="por-txt">96,930 Users (40%)</div>
+          <div class="progress mb-2" style="height: 5px;">
+            <div class="progress-bar bg-flat-color-1" role="progressbar" style="width: 40%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+
+        <div class="progress-box progress-2">
+          <h4 class="por-title">Bounce Rate</h4>
+          <div class="por-txt">3,220 Users (24%)</div>
+          <div class="progress mb-2" style="height: 5px;">
+            <div class="progress-bar bg-flat-color-2" role="progressbar" style="width: 24%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+
+        <div class="progress-box progress-2">
+          <h4 class="por-title">Unique Visitors</h4>
+          <div class="por-txt">29,658 Users (60%)</div>
+          <div class="progress mb-2" style="height: 5px;">
+            <div class="progress-bar bg-flat-color-3" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+
+        <div class="progress-box progress-2">
+          <h4 class="por-title">Targeted  Visitors</h4>
+          <div class="por-txt">99,658 Users (90%)</div>
+          <div class="progress mb-2" style="height: 5px;">
+            <div class="progress-bar bg-flat-color-4" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+</div>
+<!-- /#wrapper -->
+
+<!-- Bootstrap core JavaScript -->
+<!-- Importações do Bootstrap 4 -->
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.7.3/dist/Chart.bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>     
+
+<!-- Menu Toggle Script -->
+<script>
+  var ctx = document.getElementById( "singelBarChart" ).getContext('2d'),
+  gradient = ctx.createLinearGradient(0, 0, 0, 400),
+  gradient2 = ctx.createLinearGradient(0, 0, 0, 400);
+  gradient.addColorStop(1, 'rgba(44,173,245,0.5)');
+  gradient.addColorStop(0, 'rgba(79,203,251, 1)');
+  gradient2.addColorStop(1, 'rgba(154,119,96,0.5)');
+  gradient2.addColorStop(0, 'rgba(248,207,105,1)');
+
+  ctx.height = document.body.scrollHeight * 0.15;
+  var myChart = new Chart( ctx, {
+    type: 'bar',
+    data: {
+      labels: [ "Books and magazines",
+               "Clothing and accessories",
+               "Computer",
+               "Drugs and health aids",
+               "Electronics and appliances", 
+               "Food, beer, and wine",
+               "Music and Videos",
+               "Office equipment and supplies",
+               "Sporting Goods",
+               "Toys, hobby goods, and games",
+               "Other merchandise",
+               "Nonmerchandise receipts"],
+      datasets: [
+      {
+        label: "Total",
+        data: [ 65, 59, 80, 81, 56, 55, 45, 123, 10, 30, 20, 120],
+        borderWidth: "0",
+        backgroundColor: gradient
+      },
+      {
+        label: "E-commerce",
+        data: [ 28, 48, 40, 19, 86, 27, 76, 80, 10, 30, 20, 120],
+        borderColor: "rgba(0,0,0,0.09)",
+        borderWidth: "0",
+        backgroundColor: gradient2
+      }
+      ]
+    },
+    options: {
+      scales: {
+        yAxes: [ {
+          ticks: {
+            beginAtZero: true
+          }
+        } ]
+      }
+    }
+  } );
+
+  $("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+  });
+</script>
+
+</body>
+
+</html>

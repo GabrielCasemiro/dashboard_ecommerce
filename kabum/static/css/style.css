@@ -1,0 +1,92 @@
+
+/*CLASSES PADRÃO*/
+body {
+  overflow-x: hidden;
+  font-family: 'Nunito', sans-serif;
+}
+.bg-dark{
+  background-color: #28292D !important;
+  color: #939394;
+}
+
+.border-dark{
+  border-color: background-color: #1A181A !important;
+}
+.bg-body{
+  background-color: #1A181A;
+}
+.pointer{
+  cursor:pointer;
+}
+/*MENU LATERAL */
+
+.side-menu{
+  background-color: #28292D !important;
+  color: white;
+}
+.icone-menu{
+  background-color: #f9f9f9;
+  color:#F79500 !important;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.list-group-item:hover .icone-menu{
+  background-color: #F79500;
+  color:white !important;
+  padding-left: 4px;
+  padding-right: 4px;
+
+}
+
+/*MENU SUPERIOR*/
+
+.dropdown-menu{
+  background-color: #35373C;
+
+}
+.dropdown-item{
+  color:white !important;
+}
+.dropdown-item:hover{
+  background-color: #1A181A;
+}
+.icone-login{
+  background-color: #35373C;
+  color:#F79500 !important;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+/*CONTEUDO PRINCIPAL*/
+.bg-card-blue{
+   background-image: linear-gradient(#53CFDD, #1CA1FE);
+}
+.bg-card-pink{
+   background-image: linear-gradient(#EF719E, #EE8C6B);
+}
+.bg-card-yellow{
+   background-image: linear-gradient(#F8C96C, #FBB27C);
+}
+.bg-card-purple{
+   background-image: linear-gradient(#677CE8, #7258B8);
+}
+.icone-card{
+  font-size: 300%;
+}
+.text-card{
+  font-size: 160%;
+}
+
+.progress-box {
+    margin-bottom: 30px;
+}
+.progress-box .por-title {
+    font-size: 0.5em;
+    font-weight: 600;
+    color: #868e96;
+    padding-bottom: 5px;
+}
+.progress-box .por-txt {
+    font-size: 13px;
+    padding-bottom: 5px;
+}

@@ -1,4 +1,4 @@
-# dashboard_kabum
+# dashboard e-commerce
 Esse dashboard foi desenvolvido para o visualização de dados técnicos de e-commerce.
 
 O sistema foi construído em Python, utilizando o framework Django. Utilizei para o front-end: HTML5, CSS3, Jquery e Boostrap4.
